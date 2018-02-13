@@ -1,0 +1,33 @@
+{
+  "extends": ["prettier"],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "test": true,
+    "expect": true,
+    "describe": true,
+    "FB": true,
+    "Phaser": true
+  },
+  "parser": "babel-eslint",
+  "plugins": [
+    "prettier"
+  ],
+  "settings": {
+    "import/core-modules": [ "phaser" ]
+  },
+  "parserOptions": {
+    "ecmaVersion": 5,
+    "sourceType": "module"
+  },
+  "rules": {
+    "prettier/prettier": ["error", { "singleQuote": true, "printWidth": 100 }],
+    "strict": 2,
+    "max-len": ["error", 120],
+    "comma-dangle": [1, "never"],
+    "no-param-reassign": ["error", { "props": false }],
+    "quotes": [2, "single"]
+  }
+}
