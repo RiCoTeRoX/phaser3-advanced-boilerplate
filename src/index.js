@@ -1,4 +1,4 @@
-import Phaser from 'Phaser';
+import Phaser from 'phaser';
 import BootScene from './scenes/Boot/BootScene';
 
 const config = {
