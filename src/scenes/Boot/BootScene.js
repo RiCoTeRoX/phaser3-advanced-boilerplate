@@ -1,5 +1,7 @@
 import Phaser from 'phaser';
 import image from './../../assets/images/logo.png';
+import audioMP3 from './../../assets/audio/medieval_music.mp3';
+import audioOGG from './../../assets/audio/medieval_music.ogg';
 
 class BootScene extends Phaser.Scene {
   constructor() {

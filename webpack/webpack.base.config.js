@@ -40,6 +40,12 @@ export default new WebpackConfig().merge({
         loader: 'file-loader?name=[path][name].[ext]'
       },
       {
+        test: /\.(mp3|ogg)$/,
+        loader: 'file-loader?name=[path][name].[ext]',
+        exclude: /node_modules/
+      },
+
+      {
         test: [/\.vert$/, /\.frag$/],
         use: [
           {
